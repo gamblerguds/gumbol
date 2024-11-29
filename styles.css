@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    background-color: #1b1b2f;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffc107;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #a1a1a1;
+}
+
+/* Balance Section */
+.balance-section {
+    margin-bottom: 20px;
+}
+
+.balance-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.deposit-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.deposit-container input {
+    width: 60%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.deposit-container .btn {
+    background-color: #ffc107;
+    color: #1b1b2f;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.deposit-container .btn:hover {
+    transform: scale(1.1);
+}
+
+/* Betting Section */
+.betting-section {
+    margin-bottom: 20px;
+}
+
+.betting-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.bet-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.bet-controls input {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-group label {
+    cursor: pointer;
+}
+
+/* Buttons */
+.btn {
+    background-color: #ffc107;
+    color: #1b1b2f;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn:disabled {
+    background-color: #a1a1a1;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.btn:hover:enabled {
+    transform: scale(1.1);
+}
+
+/* Game Section */
+.game-section {
+    margin-bottom: 20px;
+}
+
+.cards-display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: #282a36;
+    color: #ffc107;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.game-result {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .cards-display {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        margin: 0;
+    }
+}

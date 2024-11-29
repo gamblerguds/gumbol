@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>♠️ Card Battle Game ♠️</h1>
+            <p class="subtitle">Bet, Draw, and Win!</p>
+        </header>
+
+        <section class="balance-section">
+            <h2>💰 Your Balance: $<span id="balance">0.00</span></h2>
+            <div class="deposit-container">
+                <input type="number" id="deposit-amount" placeholder="Enter deposit amount">
+                <button id="deposit-btn" class="btn">Deposit</button>
+            </div>
+        </section>
+
+        <section class="betting-section">
+            <h3>Place Your Bet</h3>
+            <div class="bet-controls">
+                <input type="number" id="bet-amount" placeholder="Enter bet amount">
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="side" value="player"> Player
+                    </label>
+                    <label>
+                        <input type="radio" name="side" value="banker"> Banker
+                    </label>
+                </div>
+                <button id="bet-btn" class="btn">Place Bet</button>
+            </div>
+        </section>
+
+        <section class="game-section">
+            <h3>Game</h3>
+            <div class="cards-display">
+                <div id="player-card" class="card">Player's Card: </div>
+                <div id="banker-card" class="card">Banker's Card: </div>
+            </div>
+            <button id="draw-btn" class="btn" disabled>Draw Card</button>
+            <p id="game-result" class="game-result"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
